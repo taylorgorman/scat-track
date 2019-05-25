@@ -8,6 +8,7 @@ script:
  - npm run build
 install:
   - npm install -g firebase-tools
+  - npm install -g react-scripts
 deploy:
   provider: firebase
   token:
