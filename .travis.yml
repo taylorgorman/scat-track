@@ -10,5 +10,6 @@ install:
   - npm install
 deploy:
   provider: firebase
+  skip_cleanup: true
   token:
     secure: $FIREBASE_TOKEN
