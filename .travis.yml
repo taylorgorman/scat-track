@@ -7,9 +7,9 @@ cache:
     - functions/node_modules
 install:
   - npm install -g
-  - cd functions && npm install
 script:
  - npm run build
+before_deploy: cd functions && npm install
 deploy:
   provider: firebase
   skip_cleanup: true
