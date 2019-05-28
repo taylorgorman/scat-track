@@ -74,8 +74,9 @@ node_modules/
 /coverage
 
 # production
-# need this in repo for git -> travis -> firebase
-# /build
+# need this folder in repo for git -> travis -> firebase, but don't need files in it
+/build/*
+/build/!.gitignore
 
 # misc
 .DS_Store
