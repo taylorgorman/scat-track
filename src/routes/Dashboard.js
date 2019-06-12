@@ -1,11 +1,14 @@
 import React from 'react';
+import Header from '../components/Header';
+import ButtonAddNew from '../components/ButtonAddNew';
 
-export default class CreateCrap extends React.PureComponent {
+export default class Dashboard extends React.PureComponent {
 
   render() { return (
   <React.Fragment>
 
-    <h1>Doo List</h1>
+    <Header title="Doo List" />
+    <ButtonAddNew />
 
   </React.Fragment>
   ); }

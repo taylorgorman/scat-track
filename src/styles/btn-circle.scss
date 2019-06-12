@@ -1,0 +1,19 @@
+
+a.btn-circle {
+  font-size: 3em;
+  font-weight: 200;
+  color: white;
+  border-radius: 10em;
+  display: inline-block;
+  line-height: 1;
+  padding: 0 0.3em 0.2em;
+  margin: 5%;
+
+  &.add {
+    background-color: $cyan;
+  }
+  &.close {
+    background-color: $pink;
+    transform: rotate(45deg);
+  }
+}

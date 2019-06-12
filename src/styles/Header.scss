@@ -1,0 +1,17 @@
+
+html {
+  margin-top: $header_height;
+}
+header {
+  height: $header_height;
+  background: $yellow;
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+
+  h1 {
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+}

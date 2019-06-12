@@ -1,0 +1,11 @@
+.bottom-nav {
+  background-color: $cyan;
+
+  a {
+    color: #fff;
+
+    &.active {
+      background-color: $purple;
+    }
+  }
+}

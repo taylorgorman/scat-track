@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from './routes/Dashboard';
-import CreateCrap from './routes/CreateCrap';
+import NewPoo from './routes/NewPoo';
+import './App.scss';
 
 export default class App extends React.PureComponent {
 
@@ -10,7 +11,7 @@ export default class App extends React.PureComponent {
 
     <Switch>
       <Route exact path="/" component={Dashboard} />
-      <Route exact path="/" component={CreateCrap} />
+      <Route exact path="/new" component={NewPoo} />
     </Switch>
 
   </BrowserRouter>
