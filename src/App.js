@@ -1,14 +1,19 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Dashboard from './routes/Dashboard';
+import CreateCrap from './routes/CreateCrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1><span role="img" className="App-logo" aria-label="Iss Me, Poop">💩</span></h1>
-      </header>
-    </div>
-  );
+export default class App extends React.PureComponent {
+
+  render() { return (
+  <BrowserRouter>
+
+    <Switch>
+      <Route exact path="/" component={Dashboard} />
+      <Route exact path="/" component={CreateCrap} />
+    </Switch>
+
+  </BrowserRouter>
+  ); }
+
 }
-
-export default App;
